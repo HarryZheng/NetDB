@@ -28,7 +28,8 @@
 				"description": "Download Stock Price History To Database",
 				"activities": [
 					{
-						"name": "Copy data1",
+						"name": "DownloadStockPriceHistory",
+						"description": "Download Stock Price History",
 						"type": "Copy",
 						"dependsOn": [],
 						"policy": {
