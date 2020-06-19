@@ -1,0 +1,58 @@
+{
+	"name": "StockPriceTable",
+	"properties": {
+		"description": "Stock.Price Table",
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabase1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "Date",
+				"type": "date"
+			},
+			{
+				"name": "Open",
+				"type": "money",
+				"precision": 19,
+				"scale": 4
+			},
+			{
+				"name": "High",
+				"type": "money",
+				"precision": 19,
+				"scale": 4
+			},
+			{
+				"name": "Low",
+				"type": "money",
+				"precision": 19,
+				"scale": 4
+			},
+			{
+				"name": "Close",
+				"type": "money",
+				"precision": 19,
+				"scale": 4
+			},
+			{
+				"name": "AdjClose",
+				"type": "money",
+				"precision": 19,
+				"scale": 4
+			},
+			{
+				"name": "Volume",
+				"type": "bigint",
+				"precision": 19
+			}
+		],
+		"typeProperties": {
+			"schema": "stock",
+			"table": "price"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

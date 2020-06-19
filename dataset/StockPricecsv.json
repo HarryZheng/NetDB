@@ -1,0 +1,53 @@
+{
+	"name": "StockPricecsv",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "HttpServerYahooFinance1",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"StartDate": {
+				"type": "int",
+				"defaultValue": 1587168000
+			},
+			"EndDate": {
+				"type": "int",
+				"defaultValue": 1592438400
+			}
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"type": "String"
+			},
+			{
+				"type": "String"
+			},
+			{
+				"type": "String"
+			},
+			{
+				"type": "String"
+			},
+			{
+				"type": "String"
+			},
+			{
+				"type": "String"
+			},
+			{
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

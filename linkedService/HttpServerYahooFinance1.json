@@ -1,0 +1,13 @@
+{
+	"name": "HttpServerYahooFinance1",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "HttpServer",
+		"typeProperties": {
+			"url": "https://query1.finance.yahoo.com/v7/finance/download/SPY?period1=1587168000&period2=1592438400&interval=1d&events=history",
+			"enableServerCertificateValidation": true,
+			"authenticationType": "Anonymous"
+		}
+	}
+}
